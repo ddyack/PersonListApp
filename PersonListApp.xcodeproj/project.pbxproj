@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		37F1C3EA2507E47600BAF615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1C3E92507E47600BAF615 /* AppDelegate.swift */; };
 		37F1C3EC2507E47600BAF615 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1C3EB2507E47600BAF615 /* SceneDelegate.swift */; };
-		37F1C3EE2507E47600BAF615 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1C3ED2507E47600BAF615 /* ViewController.swift */; };
 		37F1C3F12507E47600BAF615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F1C3EF2507E47600BAF615 /* Main.storyboard */; };
 		37F1C3F32507E47900BAF615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F1C3F22507E47900BAF615 /* Assets.xcassets */; };
 		37F1C3F62507E47900BAF615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F1C3F42507E47900BAF615 /* LaunchScreen.storyboard */; };
+		37F1C3FE2507F29600BAF615 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1C3FD2507F29600BAF615 /* PersonListViewController.swift */; };
+		37F1C40025080E6100BAF615 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1C3FF25080E6100BAF615 /* Person.swift */; };
+		37F1C402250827F800BAF615 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1C401250827F800BAF615 /* DetailsViewController.swift */; };
+		37F1C4042508374200BAF615 /* FullPersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1C4032508374200BAF615 /* FullPersonListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37F1C3E62507E47600BAF615 /* PersonListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F1C3E92507E47600BAF615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F1C3EB2507E47600BAF615 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		37F1C3ED2507E47600BAF615 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37F1C3F02507E47600BAF615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37F1C3F22507E47900BAF615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37F1C3F52507E47900BAF615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37F1C3F72507E47900BAF615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F1C3FD2507F29600BAF615 /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
+		37F1C3FF25080E6100BAF615 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		37F1C401250827F800BAF615 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		37F1C4032508374200BAF615 /* FullPersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPersonListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,10 @@
 			children = (
 				37F1C3E92507E47600BAF615 /* AppDelegate.swift */,
 				37F1C3EB2507E47600BAF615 /* SceneDelegate.swift */,
-				37F1C3ED2507E47600BAF615 /* ViewController.swift */,
+				37F1C3FD2507F29600BAF615 /* PersonListViewController.swift */,
+				37F1C4032508374200BAF615 /* FullPersonListViewController.swift */,
+				37F1C401250827F800BAF615 /* DetailsViewController.swift */,
+				37F1C3FF25080E6100BAF615 /* Person.swift */,
 				37F1C3EF2507E47600BAF615 /* Main.storyboard */,
 				37F1C3F22507E47900BAF615 /* Assets.xcassets */,
 				37F1C3F42507E47900BAF615 /* LaunchScreen.storyboard */,
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37F1C3EE2507E47600BAF615 /* ViewController.swift in Sources */,
+				37F1C3FE2507F29600BAF615 /* PersonListViewController.swift in Sources */,
 				37F1C3EA2507E47600BAF615 /* AppDelegate.swift in Sources */,
+				37F1C40025080E6100BAF615 /* Person.swift in Sources */,
 				37F1C3EC2507E47600BAF615 /* SceneDelegate.swift in Sources */,
+				37F1C4042508374200BAF615 /* FullPersonListViewController.swift in Sources */,
+				37F1C402250827F800BAF615 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +306,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dmitriy-dyachkov.PersonListApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dmitriy-dyachkov.PersonListApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
