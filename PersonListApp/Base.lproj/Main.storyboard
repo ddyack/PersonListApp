@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kYd-cG-knB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Xd-Oh-dnc">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -38,7 +38,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cqL-Fi-LfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2128" y="-362"/>
+            <point key="canvasLocation" x="1926" y="-362"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="HvF-vK-9bX">
@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5pe-E5-Qrq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2903" y="-362"/>
+            <point key="canvasLocation" x="2844" y="-362"/>
         </scene>
         <!--Item-->
         <scene sceneID="vzk-LW-1gu">
@@ -119,12 +119,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="xZj-ZH-Hgr" kind="relationship" relationship="rootViewController" id="J2q-7t-7kD"/>
+                        <segue destination="kYd-cG-knB" kind="relationship" relationship="rootViewController" id="byc-ZQ-nFo"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K0b-gS-vxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1350" y="-362.32394366197184"/>
+            <point key="canvasLocation" x="62" y="-362"/>
         </scene>
         <!--Persons List-->
         <scene sceneID="YBG-oB-Mky">
@@ -149,50 +149,35 @@
                             <outlet property="delegate" destination="xKG-tK-Oqf" id="anC-wV-6Rj"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="lq9-zI-E28"/>
                     <navigationItem key="navigationItem" title="Persons List" id="0Xf-8b-ebh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUy-wP-s99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1350" y="427"/>
+            <point key="canvasLocation" x="1056" y="382"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="G0H-Fs-vP7">
-            <objects>
-                <navigationController id="O3z-Hc-vfm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="person.3.fill" catalog="system" id="rqa-aF-ilR"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Kai-Gu-0Gt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="xKG-tK-Oqf" kind="relationship" relationship="rootViewController" id="mhq-pH-bVR"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hdH-PE-521" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="504" y="427"/>
-        </scene>
-        <!--Tab Bar Controller-->
+        <!--Persons List-->
         <scene sceneID="Q3m-1v-GWn">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="kYd-cG-knB" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Persons List" id="eMt-Wk-UEC"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nTq-0g-i7V">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9Xd-Oh-dnc" kind="relationship" relationship="viewControllers" id="JKX-IU-vAT"/>
-                        <segue destination="O3z-Hc-vfm" kind="relationship" relationship="viewControllers" id="I7r-WZ-3fi"/>
+                        <segue destination="xZj-ZH-Hgr" kind="relationship" relationship="viewControllers" id="URZ-nu-a10"/>
+                        <segue destination="xKG-tK-Oqf" kind="relationship" relationship="viewControllers" id="rFM-F3-ayq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYf-ov-5k2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="506" y="-362"/>
+            <point key="canvasLocation" x="1056" y="-362"/>
         </scene>
     </scenes>
     <resources>
-        <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
     </resources>

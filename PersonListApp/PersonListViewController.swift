@@ -15,8 +15,9 @@ class PersonListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-
+        guard let fullPersonVC = tabBarController?.viewControllers?.last as? FullPersonListViewController else {return}
+        fullPersonVC.fullPersonList = personList
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,9 +36,11 @@ class PersonListViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailsVC = segue.destination as? DetailsViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        
         detailsVC.person = personList[indexPath.row]
         
     }
-
+    
+    
 
 }
