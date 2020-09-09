@@ -17,10 +17,7 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         phoneLabel.text = person.phone
         emailLabel.text = person.email
-
     }
-    
 }

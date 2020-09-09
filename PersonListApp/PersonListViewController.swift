@@ -9,9 +9,8 @@
 import UIKit
 
 class PersonListViewController: UITableViewController {
-
-    var personList = Person.getPersonList()
     
+    var personList = Person.getPersonList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,11 +18,11 @@ class PersonListViewController: UITableViewController {
         fullPersonVC.fullPersonList = personList
         
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         personList.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personName", for: indexPath)
         
@@ -41,6 +40,4 @@ class PersonListViewController: UITableViewController {
         
     }
     
-    
-
 }

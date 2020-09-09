@@ -149,7 +149,7 @@
                             <outlet property="delegate" destination="xKG-tK-Oqf" id="anC-wV-6Rj"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="lq9-zI-E28"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="person.3.fill" catalog="system" id="lq9-zI-E28"/>
                     <navigationItem key="navigationItem" title="Persons List" id="0Xf-8b-ebh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUy-wP-s99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -178,6 +178,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
     </resources>
